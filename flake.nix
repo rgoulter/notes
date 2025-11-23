@@ -40,6 +40,7 @@
             copyToRoot = [
               pkgs.bashInteractive
               pkgs.coreutils
+              pkgs.gnugrep
               emanote
             ];
             
