@@ -1,0 +1,29 @@
+# .zk/config.toml
+
+[note]
+default-title = "untitled"
+# filename = "{{title}}"
+filename = "{{id}}-{{slug title}}"
+extension = "md"
+template = "default.md"
+
+# If using https://github.com/srid/emanote-template then you can set the
+# following to ignore everything except what's inside the "content" dir,
+# such as the root README.md file:
+#ignore = [
+#	"!content/"
+#]
+
+[format.markdown]
+
+# zk has a "wiki" link mode, but it includes the full paths.
+# Emanote only needs the filename.
+link-format = "[[{{filename}}]]"
+
+[lsp.diagnostics]
+# Each diagnostic can have for value: none, hint, info, warning, error
+
+# Report titles of wiki-links as hints.
+wiki-title = "hint"
+# Warn for dead links between notes.
+dead-link = "error"
