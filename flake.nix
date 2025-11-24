@@ -39,8 +39,7 @@
 
             copyToRoot = [
               pkgs.bashInteractive
-              pkgs.coreutils
-              pkgs.gnugrep
+              pkgs.busybox
               emanote
             ];
             
