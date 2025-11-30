@@ -22,7 +22,6 @@
           sites."default" = {
             layers = [{ path = ./.; pathString = "."; }];
             # port = 8080;
-            baseUrl = "/"; # Change to "/" (or remove it entirely) if using CNAME
             # prettyUrls = true;
           };
         };
